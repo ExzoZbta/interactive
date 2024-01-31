@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+    font-size: larger;
+    line-height: normal;
+}
+
+.title span:nth-of-type(even) {
+    color: rgb(239, 204, 0);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+b {
+    font-size: large;
+}

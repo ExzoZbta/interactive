@@ -1,0 +1,26 @@
+body {
+    font-family: 'Exo', sans-serif;
+    font-size: x-large;
+}
+
+p {
+    text-align: center;
+}
+
+#lungfish {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(251,126,20);
+}
+#trilobite {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(251,126,20);
+}
+#cradle {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(251,126,20);
+    text-align: center;
+
+}

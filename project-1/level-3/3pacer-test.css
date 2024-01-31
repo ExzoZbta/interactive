@@ -1,0 +1,429 @@
+body {
+    text-align: center;
+    font-family: 'Faster One', system-ui;
+}
+
+div.beep {
+    color:orange;
+    font-size: xx-large;
+}
+
+div.ding {
+    color:greenyellow;
+    font-size: xx-large;
+}
+div.one {
+    letter-spacing: .5rem;
+}
+
+div.two {
+    letter-spacing: 1rem;
+}
+
+div.three {
+    letter-spacing: 1.5rem;
+}
+
+div.four {
+    letter-spacing: 2rem;
+}
+
+div.five {
+    letter-spacing: 2.5rem;
+}
+
+div.six {
+    letter-spacing: 3rem;
+}
+
+div.seven {
+    letter-spacing: 3.5rem;
+}
+
+div.eight {
+    letter-spacing: 4rem;
+}
+
+div.nine {
+    letter-spacing: 4.5rem;
+}
+
+div.ten {
+    letter-spacing: 5rem;
+}
+
+div.eleven {
+    letter-spacing: 5.5rem;
+}
+
+div.twelve {
+    letter-spacing: 6rem;
+}
+
+div.thirteen {
+    letter-spacing: 6.5rem;
+}
+
+div.fourteen {
+    letter-spacing: 7rem;
+}
+
+div.fifteen {
+    letter-spacing: 7.5rem;
+}
+
+div.sixteen {
+    letter-spacing: 8rem;
+}
+
+div.seventeen {
+    letter-spacing: 8.5rem;
+}
+
+div.eighteen {
+    letter-spacing: 9rem;
+}
+
+div.nineteen {
+    letter-spacing: 9.5rem;
+}
+
+div.twenty {
+    letter-spacing: 10rem;
+}
+
+div.twentyone {
+    letter-spacing: 10.5rem;
+}
+
+div.twentytwo {
+    letter-spacing: 11rem;
+}
+
+div.twentythree {
+    letter-spacing: 11.5rem;
+}
+
+div.twentyfour {
+    letter-spacing: 12rem;
+}
+
+div.twentyfive {
+    letter-spacing: 12.5rem;
+}
+
+div.twentysix {
+    letter-spacing: 13rem;
+}
+
+div.twentyseven {
+    letter-spacing: 13.5rem;
+}
+
+div.twentyeight {
+    letter-spacing: 14rem;
+}
+
+div.twentynine {
+    letter-spacing: 14.5rem;
+}
+
+div.thirty {
+    letter-spacing: 15rem;
+}
+
+div.thirtyone {
+    letter-spacing: 15.5rem;
+}
+
+div.thirtytwo {
+    letter-spacing: 16rem;
+}
+
+div.thirtythree {
+    letter-spacing: 16.5em;
+}
+
+div.thirtyfour {
+    letter-spacing: 17rem;
+}
+
+div.thirtyfive {
+    letter-spacing: 17.5rem;
+}
+
+div.thirtysix {
+    letter-spacing: 18rem;
+}
+
+div.thirtyseven {
+    letter-spacing: 18.5rem;
+}
+
+div.thirtyeight {
+    letter-spacing: 19rem;
+}
+
+div.thirtynine {
+    letter-spacing: 19.5rem;
+}
+
+div.forty {
+    letter-spacing: 20rem;
+}
+
+div.fortyone {
+    letter-spacing: 20.5rem;
+}
+
+div.fortytwo {
+    letter-spacing: 21rem;
+}
+
+div.fortythree {
+    letter-spacing: 21.5rem;
+}
+
+div.fortyfour {
+    letter-spacing: 22rem;
+}
+
+div.fortyfive {
+    letter-spacing: 22.5rem;
+}
+
+div.fortysix {
+    letter-spacing: 23rem;
+}
+
+div.fortyseven {
+    letter-spacing: 23.5rem;
+}
+
+div.fortyeight {
+    letter-spacing: 24rem;
+}
+
+div.fortynine {
+    letter-spacing: 24.5rem;
+}
+
+div.fifty {
+    letter-spacing: 25rem;
+}
+
+div.fiftyone {
+    letter-spacing: 25.5rem;
+}
+
+div.fiftytwo {
+    letter-spacing: 26rem;
+}
+
+div.fiftythree {
+    letter-spacing: 26.5rem;
+}
+
+div.fiftyfour {
+    letter-spacing: 27rem;
+}
+
+div.fiftyfive {
+    letter-spacing: 27.5rem;
+}
+
+div.fiftysix {
+    letter-spacing: 28rem;
+}
+
+div.fiftyseven {
+    letter-spacing: 28.5rem;
+}
+
+div.fiftyeight {
+    letter-spacing: 29rem;
+}
+
+div.fiftynine {
+    letter-spacing: 29.5rem;
+}
+
+div.sixty {
+    letter-spacing: 30rem;
+}
+
+div.sixtyone {
+    letter-spacing: 30.5rem;
+}
+
+div.sixtytwo {
+    letter-spacing: 31rem;
+}
+
+div.sixtythree {
+    letter-spacing: 31.5rem;
+}
+
+div.sixtyfour {
+    letter-spacing: 32rem;
+}
+
+div.sixtyfive {
+    letter-spacing: 32.5rem;
+}
+
+div.sixtysix {
+    letter-spacing: 33rem;
+}
+
+div.sixtyseven {
+    letter-spacing: 33.5rem;
+}
+
+div.sixtyeight {
+    letter-spacing: 34rem;
+}
+
+div.sixtynine {
+    letter-spacing: 34.5rem;
+}
+
+div.seventy {
+    letter-spacing: 35rem;
+}
+
+div.seventyone {
+    letter-spacing: 35.5rem;
+}
+
+div.seventytwo {
+    letter-spacing: 36rem;
+}
+
+div.seventythree {
+    letter-spacing: 36.5rem;
+}
+
+div.seventyfour {
+    letter-spacing: 37rem;
+}
+
+div.seventyfive {
+    letter-spacing: 37.5rem;
+}
+
+div.seventysix {
+    letter-spacing: 38rem;
+}
+
+div.seventyseven {
+    letter-spacing: 38.5rem;
+}
+
+div.seventyeight {
+    letter-spacing: 39rem;
+}
+
+div.seventynine {
+    letter-spacing: 39.5rem;
+}
+
+div.eighty {
+    letter-spacing: 40rem;
+}
+
+div.eightyone {
+    letter-spacing: 40.5rem;
+}
+
+div.eightytwo {
+    letter-spacing: 41rem;
+}
+
+div.eightythree {
+    letter-spacing: 41.5rem;
+}
+
+div.eightyfour {
+    letter-spacing: 42rem;
+}
+
+div.eightyfive {
+    letter-spacing: 42.5rem;
+}
+
+div.eightysix {
+    letter-spacing: 43rem;
+}
+
+div.eightyseven {
+    letter-spacing: 43.5rem;
+}
+
+div.eightyeight {
+    letter-spacing: 44rem;
+}
+
+div.eightynine {
+    letter-spacing: 44.5rem;
+}
+
+div.ninety {
+    letter-spacing: 45rem;
+}
+
+div.ninetyone {
+    letter-spacing: 45.5rem;
+}
+
+div.ninetytwo {
+    letter-spacing: 46rem;
+}
+
+div.ninetythree {
+    letter-spacing: 46.5rem;
+}
+
+div.ninetyfour {
+    letter-spacing: 47rem;
+}
+
+div.ninetyfive {
+    letter-spacing: 47.5rem;
+}
+
+div.ninetysix {
+    letter-spacing: 48rem;
+}
+
+div.ninetyseven {
+    letter-spacing: 48.5rem;
+}
+
+div.ninetyeight {
+    letter-spacing: 49rem;
+}
+
+div.ninetynine {
+    letter-spacing: 49.5rem;
+}
+
+div.hundred {
+    letter-spacing: 50rem;
+}
+
+div.hundredone {
+    letter-spacing: 50.5rem;
+}
+
+div.hundredtwo {
+    letter-spacing: 51rem;
+}
+
+div.hundredthree {
+    letter-spacing: 51.5rem;
+}
+
+div.hundredfour {
+    letter-spacing: 52rem;
+}
