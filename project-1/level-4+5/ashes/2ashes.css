@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(251,126,20);
+}
+
+.container {
+    font-family: console-font;
+    font-size: 1.3vw;
+    position: relative;
+    color: white;
+}
+
+#console {
+    height: auto;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.text-container {
+    position: absolute;
+    top: 8%;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#name {
+    color: rgb(251,126,20);
+}
+
