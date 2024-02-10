@@ -1,1 +1,3 @@
-# ART 369 Interactive Design and the Internet: Software for  People -- projects + assignments
+# ART 369 Interactive Design and the Internet: Software for People 
+
+Projects + assignments:
