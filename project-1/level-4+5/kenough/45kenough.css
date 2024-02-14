@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(251,126,20);
+    background-color: hotpink;
 }
 
 .container {
@@ -8,7 +8,6 @@ body {
     position: relative;
     color: white;
 }
-
 
 #console {
     height: auto;
@@ -30,15 +29,13 @@ body {
     width: 52.2vw;
     overflow: scroll;
 }
-
-#lungfish {
-    color: rgb(251,126,20);
+.ken {
+    color:hotpink;
+    font-weight: bold;
 }
-#trilobite {
-    color: rgb(251,126,20);
-}
-#cradle {
-    color: rgb(251,126,20);
+h3 {
+    text-transform: uppercase;
+    line-height: 30%;
 }
 
 ::-webkit-scrollbar {
@@ -46,13 +43,14 @@ body {
 }
 
 ::-webkit-scrollbar-button {
-    background: url(steam-up-arrow.png);
+    background: url(barbie-up-arrow.png);
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(90, 106, 80, 255);
+    background: rgba(138, 48, 86, 255);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: url(steam-scroll.png);
+    background: url(barbie-scroll.png);
+    border-bottom: 100px;
 }

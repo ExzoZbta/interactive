@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(251,126,20);
+    background: 
+      linear-gradient(100deg, rgba(0,101,255), rgba(255,154,0));
 }
 
 .container {
@@ -27,26 +28,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     height: 40vw;
-    width: 52.2vw;
+    width: 51.8vw;
     overflow: scroll;
 }
 
-#lungfish {
-    color: rgb(251,126,20);
-}
-#trilobite {
-    color: rgb(251,126,20);
-}
-#cradle {
-    color: rgb(251,126,20);
-}
 
 ::-webkit-scrollbar {
     width: 1.7vw;
 }
 
 ::-webkit-scrollbar-button {
-    background: url(steam-up-arrow.png);
+    background: url(portal-up-arrow.png);
 }
 
 ::-webkit-scrollbar-track {
@@ -54,5 +46,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: url(steam-scroll.png);
+    background: url(portal-scroll.png);
 }
