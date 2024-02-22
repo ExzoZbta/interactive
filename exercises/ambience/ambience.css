@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(268deg, rgba(0,101,255), rgba(255,154,0));
+    background-size: 400% 400%;
+    animation: portal-animation 14s ease infinite;
+}
+@keyframes portal-animation {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.sphere-x {
+    animation: sphere-x-bounce 5s linear infinite alternate;
+}
+
+.sphere-y {
+    display: block;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    background: radial-gradient(circle at 100px 100px, rgba(255,170,204), rgba(189,189,189));
+    /* animation-name: sphere-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    animation: sphere-y-bounce 2.6s linear infinite alternate;
+
+}
+/* @keyframes sphere-move {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scaleY(0.95) scaleX(1.05);
+    }
+    48% {
+        transform: scaleY(1.1) scaleX(0.9);
+    }
+    68% {
+        transform: scaleY(0.98) scaleX(1.02);
+    }
+    80% {
+        transform: scaleY(1.02) scaleX(0.98);
+    }
+    97%, 100% {
+        transform: scale(1);
+    }
+
+} */
+
+/* @keyframes slide {
+    from {
+        left: 0;
+        top: 0;
+
+    }
+    to {
+        left: 100%;
+        top: 100%;
+    }
+} */
+
+@keyframes sphere-x-bounce {
+    100% {
+      transform: translateX(calc(100vw - 100px));
+    }
+  }
+
+  @keyframes sphere-y-bounce {
+    100% {
+      transform: translateY(calc(100vh - 100px));
+    }
+  }

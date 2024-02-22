@@ -1,0 +1,49 @@
+body {
+    background: black;
+}
+
+.container {
+    font-family: console-font;
+    font-size: 1.3vw;
+    position: relative;
+    color: white;
+}
+
+
+#console {
+    height: auto;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.text-container {
+    position: absolute;
+    top: 8%;
+    left: 23.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 40vw;
+    width: 51.8vw;
+    overflow: scroll;
+}
+
+
+::-webkit-scrollbar {
+    width: 1.7vw;
+}
+
+::-webkit-scrollbar-button {
+    background: url(died-up-arrow.png);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(156, 30, 33, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: url(died-scroll.png);
+}
