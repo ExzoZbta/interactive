@@ -9,8 +9,10 @@ body {
     /* max-width: 100%;
     position: center; */
     width: 90%;
+    height: auto;
     display: block;
-    margin: auto; 
+    margin-left: auto; 
+    margin-right: auto;
     z-index: 1;
 }
 
@@ -63,4 +65,11 @@ p {
         font-size: 3vw;
         left: 34%;
     }
+}
+
+@media only screen and (max-width: 800px) {
+    #chaos {
+        margin-top: 25%;
+    }
+
 }
