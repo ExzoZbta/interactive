@@ -1,7 +1,14 @@
 body {
-    background: black;
+    background: rgba(207, 115, 54);
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+/* red team: rgba(184, 56, 59) */
+/* blue team: rgba(88, 133, 162) */
+/* background: 
+      linear-gradient(100deg, rgba(184, 56, 59), rgba(88, 133, 162)); */
 
 .container {
     font-family: console-font;
@@ -69,14 +76,13 @@ body {
 
 ::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 3px rgba(121,145,146,255); */
-    background: rgba(156,30,33,255);
+    /* background: rgba(95, 73, 113, 255); */
+    background: rgba(78, 113, 73, 255);
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 1px solid rgba(176,104,108,255);
-    background: rgba(127,29,33,255);
-    /* background: url(portal-scroll2.png); */
- 
+    /* border: 1px solid rgba(129, 115, 150, 255); */
+    /* background: rgba(80, 59, 95, 255); */
+    border: 1px solid rgba(131, 149, 121, 255);
+    background: rgba(63, 95, 59, 255);
 }
-
-
