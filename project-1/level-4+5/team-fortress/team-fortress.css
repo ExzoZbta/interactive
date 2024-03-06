@@ -47,6 +47,67 @@ body {
     overflow-x: hidden;
 }
 
+input[type=text] {
+    width: 30vw;
+    height: 2vw;
+    border-top: 1px solid rgba(24, 76, 5, 255);
+    border-left: 1px solid rgba(29, 84, 10, 255);
+    border-right: 1px solid rgba(97, 185, 83, 255);
+    border-bottom: 1px solid rgba(101, 180, 80, 255);
+    background-color: rgba(35, 104, 20, 255);
+    margin-right: 1em; 
+}
+
+button {
+    position: fixed;
+    font-family: console-font;
+    font-size: 1.1vw;
+    color: white;
+    height: 2.3vw;
+    width: 5.3vw;
+    text-align: left;
+    border-top: 1px solid rgba(97, 183, 77, 255);
+    border-left: 1px solid rgba(106, 175, 86, 255);
+    border-right: 1px solid rgba(16, 82, 6, 255);
+    border-bottom: 1px solid rgba(21, 78, 6, 255);
+    background-color: rgba(33, 135, 19, 255);
+}
+
+/* 
+
+input[type=text] {
+    width: 30vw;
+    height: 2vw;
+    border-top: 1px solid rgba(28, 5, 75, 255);
+    border-left: 1px solid rgba(32, 10, 81, 255);
+    border-right: 1px solid rgba(123, 83, 185, 255);
+    border-bottom: 1px solid rgba(111, 81, 181, 255);
+    background-color: rgba(51, 20, 104, 255);
+    margin-right: 1em; 
+} 
+
+*/
+
+/* 
+
+button {
+    position: fixed;
+    font-family: console-font;
+    font-size: 1.1vw;
+    color: white;
+    height: 2.3vw;
+    width: 5.3vw;
+    text-align: left;
+    border-top: 1px solid rgba(117, 77, 184, 255);
+    border-left: 1px solid rgba(113, 87, 176, 255);
+    border-right: 1px solid rgba(36, 6, 82, 255);
+    border-bottom: 1px solid rgba(30, 5, 79, 255);
+    background-color: rgba(68, 19, 135, 255);
+
+}
+
+*/
+
 
 .text-container::-webkit-scrollbar {
     width: 1.8vw;
