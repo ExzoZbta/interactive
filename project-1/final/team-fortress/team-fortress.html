@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Team</title>
+
+    <link rel="stylesheet" href="team-fortress.css">
+    
+    <style>
+        @font-face {
+            font-family: console-font;
+            src: url(Web437_IBM_VGA_8x16.woff)
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <script src="team-fortress.js"></script> 
+
+    <audio id="scout-1-audio" src="scout_1.wav"></audio>
+    <audio id="scout-2-audio" src="scout_2.wav"></audio>
+    <audio id="scout-3-audio" src="scout_3.wav"></audio>
+    <audio id="scout-4-audio" src="scout_4.wav"></audio>
+    <audio id="scout-5-audio" src="scout_5.wav"></audio>
+    <audio id="scout-6-audio" src="scout_6.wav"></audio>
+    <audio id="scout-7-audio" src="scout_7.wav"></audio>
+    <audio id="scout-8-audio" src="scout_8.wav"></audio>
+    <audio id="scout-9-audio" src="scout_9.wav"></audio>
+    <audio id="scout-10-audio" src="scout_10.wav"></audio>
+    
+    <audio id="soldier-1-audio" src="soldier_1.wav"></audio>
+    <audio id="soldier-2-audio" src="soldier_2.wav"></audio>
+    <audio id="soldier-3-audio" src="soldier_3.mp3"></audio>
+    <audio id="soldier-4-audio" src="soldier_4.mp3"></audio>
+    <audio id="soldier-5-audio" src="soldier_5.wav"></audio>
+    <audio id="soldier-6-audio" src="soldier_6.wav"></audio>
+    <audio id="soldier-7-audio" src="soldier_7.wav"></audio>
+    <audio id="soldier-8-audio" src="soldier_8.wav"></audio>
+    <audio id="soldier-9-audio" src="soldier_9.wav"></audio>
+    <audio id="soldier-10-audio" src="soldier_10.wav"></audio>
+
+    <audio id="pyro-1-audio" src="pyro_1.wav"></audio>
+    <audio id="pyro-2-audio" src="pyro_2.wav"></audio>
+    <audio id="pyro-3-audio" src="pyro_3.wav"></audio>
+    <audio id="pyro-4-audio" src="pyro_4.wav"></audio>
+    <audio id="pyro-5-audio" src="pyro_5.wav"></audio>
+    <audio id="pyro-6-audio" src="pyro_6.mp3"></audio>
+    <audio id="pyro-7-audio" src="pyro_7.mp3"></audio>
+    <audio id="pyro-8-audio" src="pyro_8.wav"></audio>
+    <audio id="pyro-9-audio" src="pyro_9.mp3"></audio>
+    <audio id="pyro-10-audio" src="pyro_10.mp3"></audio>
+
+    <audio id="demoman-1-audio" src="demoman_1.wav"></audio>
+    <audio id="demoman-2-audio" src="demoman_2.wav"></audio>
+    <audio id="demoman-3-audio" src="demoman_3.wav"></audio>
+    <audio id="demoman-4-audio" src="demoman_4.wav"></audio>
+    <audio id="demoman-5-audio" src="demoman_5.wav"></audio>
+    <audio id="demoman-6-audio" src="demoman_6.wav"></audio>
+    <audio id="demoman-7-audio" src="demoman_7.wav"></audio>
+    <audio id="demoman-8-audio" src="demoman_8.wav"></audio>
+    <audio id="demoman-9-audio" src="demoman_9.wav"></audio>
+    <audio id="demoman-10-audio" src="demoman_10.wav"></audio>
+
+    <audio id="heavy-1-audio" src="heavy_1.wav"></audio>
+    <audio id="heavy-2-audio" src="heavy_2.wav"></audio>
+    <audio id="heavy-3-audio" src="heavy_3.wav"></audio>
+    <audio id="heavy-4-audio" src="heavy_4.wav"></audio>
+    <audio id="heavy-5-audio" src="heavy_5.wav"></audio>
+    <audio id="heavy-6-audio" src="heavy_6.wav"></audio>
+    <audio id="heavy-7-audio" src="heavy_7.wav"></audio>
+    <audio id="heavy-8-audio" src="heavy_8.wav"></audio>
+    <audio id="heavy-9-audio" src="heavy_9.wav"></audio>
+    <audio id="heavy-10-audio" src="heavy_10.wav"></audio>
+
+    <audio id="engineer-1-audio" src="engineer_1.wav"></audio>
+    <audio id="engineer-2-audio" src="engineer_2.wav"></audio>
+    <audio id="engineer-3-audio" src="engineer_3.wav"></audio>
+    <audio id="engineer-4-audio" src="engineer_4.wav"></audio>
+    <audio id="engineer-5-audio" src="engineer_5.wav"></audio>
+    <audio id="engineer-6-audio" src="engineer_6.wav"></audio>
+    <audio id="engineer-7-audio" src="engineer_7.wav"></audio>
+    <audio id="engineer-8-audio" src="engineer_8.wav"></audio>
+    <audio id="engineer-9-audio" src="engineer_9.wav"></audio>
+    <audio id="engineer-10-audio" src="engineer_10.wav"></audio>
+
+    <audio id="medic-1-audio" src="medic_1.wav"></audio>
+    <audio id="medic-2-audio" src="medic_2.wav"></audio>
+    <audio id="medic-3-audio" src="medic_3.wav"></audio>
+    <audio id="medic-4-audio" src="medic_4.wav"></audio>
+    <audio id="medic-5-audio" src="medic_5.wav"></audio>
+    <audio id="medic-6-audio" src="medic_6.wav"></audio>
+    <audio id="medic-7-audio" src="medic_7.wav"></audio>
+    <audio id="medic-8-audio" src="medic_8.wav"></audio>
+    <audio id="medic-9-audio" src="medic_9.wav"></audio>
+    <audio id="medic-10-audio" src="medic_10.wav"></audio>
+
+    <audio id="sniper-1-audio" src="sniper_1.wav"></audio>
+    <audio id="sniper-2-audio" src="sniper_2.wav"></audio>
+    <audio id="sniper-3-audio" src="sniper_3.wav"></audio>
+    <audio id="sniper-4-audio" src="sniper_4.wav"></audio>
+    <audio id="sniper-5-audio" src="sniper_5.wav"></audio>
+    <audio id="sniper-6-audio" src="sniper_6.wav"></audio>
+    <audio id="sniper-7-audio" src="sniper_7.wav"></audio>
+    <audio id="sniper-8-audio" src="sniper_8.wav"></audio>
+    <audio id="sniper-9-audio" src="sniper_9.wav"></audio>
+    <audio id="sniper-10-audio" src="sniper_10.wav"></audio>
+
+    <audio id="spy-1-audio" src="spy_1.wav"></audio>
+    <audio id="spy-2-audio" src="spy_2.wav"></audio>
+    <audio id="spy-3-audio" src="spy_3.wav"></audio>
+    <audio id="spy-4-audio" src="spy_4.wav"></audio>
+    <audio id="spy-5-audio" src="spy_5.wav"></audio>
+    <audio id="spy-6-audio" src="spy_6.wav"></audio>
+    <audio id="spy-7-audio" src="spy_7.wav"></audio>
+    <audio id="spy-8-audio" src="spy_8.wav"></audio>
+    <audio id="spy-9-audio" src="spy_9.wav"></audio>
+    <audio id="spy-10-audio" src="spy_10.wav"></audio>
+
+    <div class="page-container">
+
+        <img id="console" src="team-fortress-steam1.png">
+
+        <div class="text-container">
+            <div class="text-container1">
+                <div id="scout">
+                    <!-- scout voicelines -->
+                    [The Scout from Team Fortress 2]
+                    <br>
+                    voice_line_1: "That's what I'm talking about!"
+                    <br>
+                    voice_line_2: (Happy laughter 2) "You got owned!"
+                    <br>
+                    voice_line_3: "Think fast chucklenuts!"
+                    <br>
+                    voice_line_4: "Hehey, I'm flyin'!"
+                    <br>
+                    voice_line_5: "You knuckleheads ain't even worth the effort"
+                    <br>
+                    voice_line_6: "I broke your stupid crap, moron!"
+                    <br>
+                    voice_line_7: "Bonk!"
+                    <br>
+                    voice_line_8: "Say goodbye to ya kneecaps, chucklehead!"
+                    <br>
+                    voice_line_9: "Domination. Look it up"
+                    <br>
+                    voice_line_10: "Ooooh yeah, you're real scary!"
+                    <br>
+                </div>
+
+                <div id="soldier">
+                    <!-- soldier voicelines -->
+                    [The Soldier from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Maggots!"
+                    <br>
+                    voice_line_2: "Thanks, soldier."
+                    <br>
+                    voice_line_3: "Sun Tzu might have invented the War, but we invented winning them!"
+                    <br>
+                    voice_line_4: "Oorah!"
+                    <br>
+                    voice_line_5: "We have you surrounded, at least from this side!"
+                    <br>
+                    voice_line_6: "Words cannot express how much I hate FRANCE right now!"
+                    <br>
+                    voice_line_7: "I will eat your ribs, I will eat them up!"
+                    <br>
+                    voice_line_8: "You can have this when you pry it from my cold, dead hands. And even then, good luck! Because I will have it glued to my cold, dead hands."
+                    <br>
+                    voice_line_9: "If God had wanted you to live, He would not have created me!"
+                    <br>
+                    voice_line_10: "Stars and Stripes beats Hammer and Sickle. Look it up!"
+                    <br>
+                </div>
+
+                <div id="pyro">
+                    <!-- pyro voicelines -->
+                    [The Pyro from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Murr hurr mphuphurrur, hurr mph phrr."
+                    <br>
+                    voice_line_2: "Hudda hudda huh!"
+                    <br>
+                    voice_line_3: "Mmphn frphha herrpha."
+                    <br>
+                    voice_line_4: "Mhnk nhya mhph."
+                    <br>
+                    voice_line_5: "Hurrururururu!"
+                    <br>
+                    voice_line_6: "Heh thubba theh then, wohha?"
+                    <br>
+                    voice_line_7: "MEDIC! Ah huf ah, huh hudda huh!"
+                    <br>
+                    voice_line_8: "Helfp ee defen!"
+                    <br>
+                    voice_line_9: "Buh, budda, bah!"
+                    <br>
+                    voice_line_10: "'Hudda over dhere punk!"
+                    <br>
+                </div>
+
+                <div id="demoman">
+                    <!-- demoman voicelines -->
+                    [The Demoman from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Ka-boooom!"
+                    <br>
+                    voice_line_2: "Kablooie!"
+                    <br>
+                    voice_line_3: "Go to hell, and tell the devil I'm comin' for him next!"
+                    <br>
+                    voice_line_4: "Any one of you (belches) Everyone, damn it... (sobs)"
+                    <br>
+                    voice_line_5: "They're goin' ta bury what's left of ye in a soup can!"
+                    <br>
+                    voice_line_6: "Any one of you, I..." (belch)
+                    <br>
+                    voice_line_7: "Guts and glory, lads!"
+                    <br>
+                    voice_line_8: "I had me good eye on you the whole time!"
+                    <br>
+                    voice_line_9: [Slurred] "Just bought two tickets to the gunshow, and I'm not givin' 'em to ya; I'm goin' with your tickets! (laughs, falls asleep) Wha--?"
+                    <br>
+                    voice_line_10: "You're all bloody dead!"
+                    <br>
+                </div>
+
+                <div id="heavy">
+                    <!-- heavy voicelines -->
+                    [The Heavy from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Entire team is babies!"
+                    <br>
+                    voice_line_2: [Singing] "Sandvich and me going to beat your ass!"
+                    <br>
+                    voice_line_3: "Sandvich make me strong!"
+                    <br>
+                    voice_line_4: "I hear someone building diaper changing station!"
+                    <br>
+                    voice_line_5: "Ya-ta-ta-ta-ta-ta-ta-ta ya-ta-ta-ta-ta-ta-ta-ta do-de-da-va-da-da-dada! Kaboom-Kaboom!"
+                    <br>
+                    voice_line_6: "As promised, Heavy will now lay egg in your mouth."
+                    <br>
+                    voice_line_7: (Big laugh)
+                    <br>
+                    voice_line_8: "Stupid! Stupid! Stupid!"
+                    <br>
+                    voice_line_9: "You are dead. Not big surprise."
+                    <br>
+                    voice_line_10: [Mimicking Minigun revving noise, then laughing] "Vzzzzzt! Rahrahrahrah! Vrrrrr! Wahahahaaaaaa!"
+                    <br>
+                </div>
+
+                <div id="engineer">
+                    <!-- engineer voicelines -->
+                    [The Engineer from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Erecting a Dispenser."
+                    <br>
+                    voice_line_2: "Nice goin', pardner."
+                    <br>
+                    voice_line_3: "Start prayin', boy!"
+                    <br>
+                    voice_line_4: "How'd that plan turn out for ya, dummy?"
+                    <br>
+                    voice_line_5: "Let's do this Texas style!"
+                    <br>
+                    voice_line_6: "Spy's sappin' my Sentry!"
+                    <br>
+                    voice_line_7: "Spy's sappin' my Teleporter!"
+                    <br>
+                    voice_line_8: "Teleporter down!"
+                    <br>
+                    voice_line_9: "Dispenser down!"
+                    <br>
+                    voice_line_10: "Sentry down!"
+                    <br>
+                </div>
+
+                <div id="medic">
+                    <!-- medic voicelines -->
+                    [The Medic from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Oops! Zat vas not Medizin!"
+                    <br>
+                    voice_line_2: "[Quietly] Did zat sting? [Loudly] SAW-ry!"
+                    <br>
+                    voice_line_3: "Danke, Kamerad!"
+                    <br>
+                    voice_line_4: "Dummkopfs!"
+                    <br>
+                    voice_line_5: "I am fully charged."
+                    <br>
+                    voice_line_6: "Schnell! Go get zem!"
+                    <br>
+                    voice_line_7: "Gesundheit!"
+                    <br>
+                    voice_line_8: (Long laugh 1)
+                    <br>
+                    voice_line_9: "Zat vas doktor-assisted homicide!"
+                    <br>
+                    voice_line_10: "Vould you like a second opinion? You are also ugly!"
+                    <br>
+                </div>
+
+                <div id="sniper">
+                    <!-- sniper voicelines -->
+                    [The Sniper from Team Fortress 2]
+                    <br>
+                    voice_line_1: "Jarate!"
+                    <br>
+                    voice_line_2: (Hocks and spits)
+                    <br>
+                    voice_line_3: "Stab, stab, stab!"
+                    <br>
+                    voice_line_4: "God Save the Queen!"
+                    <br>
+                    voice_line_5: "Well that was a real BLOODY rootin'!"
+                    <br>
+                    voice_line_6: "All your heads look bloody twelve feet tall!"
+                    <br>
+                    voice_line_7: "Here's a touchin' story. Once upon a time you died, and I lived happily ever after. The end."
+                    <br>
+                    voice_line_8: "I'm not done yet, mate, not by a long shot."
+                    <br>
+                    voice_line_9: "You shouldn't have even gotten outta bed."
+                    <br>
+                    voice_line_10: [Whispering] "Spies, bloody useless."
+                    <br>
+                </div>
+
+                <div id="spy">
+                    <!-- spy voicelines -->
+                    [The Spy from Team Fortress 2]
+                    <br>
+                    voice_line_1: "You got blood on my suit."
+                    <br>
+                    voice_line_2: "The outcome was never really in doubt."
+                    <br>
+                    voice_line_3: "Don't feel bad; you did a fine job tossing your little balls around!"
+                    <br>
+                    voice_line_4: "Did I throw a wrench into your plans?" (laughs maniacally)
+                    <br>
+                    voice_line_5: "I appear to have burst into flames."
+                    <br>
+                    voice_line_6: "The cart isn't moving, gentlemen!"
+                    <br>
+                    voice_line_7: "You disgust me, filthy jar man!"
+                    <br>
+                    voice_line_8: "May I borrow your earpiece? [mimicking Scout] 'This is Scout! Rainbows make me cry! Over!'"
+                    <br>
+                    voice_line_9: "May I make a suggestion? Run."
+                    <br>
+                    voice_line_10: "Gentlemen?"
+                </div>
+
+            </div>
+
+            <div class="about-container">
+                Welcome to the team-fortress.html page of the RC-3 OS.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This page is dedicated to the critically acclaimed multiplayer FPS,
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team Fortress 2, developed by Valve Corporation.
+                <br>
+                Type 'help' for a list of commands.
+            </div>
+        
+        </div>
+
+        <div class="img-container"> 
+            <div class="container">
+                <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="commandInput">
+                <button id="submitButton">&nbsp;Submit</button>
+                <div id="output"></div>
+            </div>
+        </div>
+        
+    </div>    
+</body>
+
+</html>
+
