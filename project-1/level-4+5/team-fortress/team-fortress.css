@@ -1,3 +1,9 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: rgba(207, 115, 54);
     overflow: hidden;
@@ -7,26 +13,33 @@ body {
 
 /* red team: rgba(184, 56, 59) */
 /* blue team: rgba(88, 133, 162) */
-/* background: 
-      linear-gradient(100deg, rgba(184, 56, 59), rgba(88, 133, 162)); */
+/* background: linear-gradient(100deg, rgba(184, 56, 59), rgba(88, 133, 162)); */
 
-.container {
+.command {
     font-family: console-font;
-    font-size: 1.3vw;
-    position: relative;
-    color: white;
+    margin-bottom: 5px;
 }
 
+#output {
+    display: none;
+}
+
+.page-container {
+    position: relative;
+    font-family: console-font;
+    font-size: 1.3vw;
+    color: white;
+}
 
 #console {
     display: block;
     width: 55.6%;
     max-width: 100%;
-    max-height: 100%;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    z-index: -1;
 }
 
 .text-container {
@@ -45,27 +58,66 @@ body {
     width: 53.5vw;
     overflow: scroll;
     overflow-x: hidden;
+    z-index: 9999;
+}
+
+.img-container {
+    display: block;
+    width: 55.6%;
+    height: var(--console-height);
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(33, 135, 19, 255);
+    /* rgba(68, 19, 135, 255) */
+    border-left: 1.6px solid rgba(112, 189, 89, 255);
+    /* rgba(126, 88, 192, 255) */
+    padding: .6%;
+    padding-left: 1.1%;  
 }
 
 input[type=text] {
-    width: 30vw;
+    width: 82%;
     height: 2vw;
+    transform: translateY(25%);
     border-top: 1px solid rgba(24, 76, 5, 255);
     border-left: 1px solid rgba(29, 84, 10, 255);
     border-right: 1px solid rgba(97, 185, 83, 255);
     border-bottom: 1px solid rgba(101, 180, 80, 255);
     background-color: rgba(35, 104, 20, 255);
-    margin-right: 1em; 
+    
+    font-family: console-font;
+    font-size: 1.5vw;
+    color: white;
+    padding: 1%;
+
+}
+
+input:focus
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 button {
-    position: fixed;
     font-family: console-font;
-    font-size: 1.1vw;
-    color: white;
-    height: 2.3vw;
-    width: 5.3vw;
+    font-size: 1.6vw;
     text-align: left;
+    color: white;
+    height: 3vw;
+    width: 16%;
     border-top: 1px solid rgba(97, 183, 77, 255);
     border-left: 1px solid rgba(106, 175, 86, 255);
     border-right: 1px solid rgba(16, 82, 6, 255);
@@ -73,41 +125,9 @@ button {
     background-color: rgba(33, 135, 19, 255);
 }
 
-/* 
-
-input[type=text] {
-    width: 30vw;
-    height: 2vw;
-    border-top: 1px solid rgba(28, 5, 75, 255);
-    border-left: 1px solid rgba(32, 10, 81, 255);
-    border-right: 1px solid rgba(123, 83, 185, 255);
-    border-bottom: 1px solid rgba(111, 81, 181, 255);
-    background-color: rgba(51, 20, 104, 255);
-    margin-right: 1em; 
-} 
-
-*/
-
-/* 
-
-button {
-    position: fixed;
-    font-family: console-font;
-    font-size: 1.1vw;
-    color: white;
-    height: 2.3vw;
-    width: 5.3vw;
-    text-align: left;
-    border-top: 1px solid rgba(117, 77, 184, 255);
-    border-left: 1px solid rgba(113, 87, 176, 255);
-    border-right: 1px solid rgba(36, 6, 82, 255);
-    border-bottom: 1px solid rgba(30, 5, 79, 255);
-    background-color: rgba(68, 19, 135, 255);
-
+.indent {
+    margin-left: 20px;
 }
-
-*/
-
 
 .text-container::-webkit-scrollbar {
     width: 1.8vw;

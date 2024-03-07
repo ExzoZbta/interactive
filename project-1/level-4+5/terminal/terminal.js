@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    window.addEventListener("resize", ()=>{
+        getConsoleImageHeight()
+    })
+
+    const getConsoleImageHeight = () => {
+        const img = document.getElementById("console");
+        const imgHeight = img.clientHeight;
+        document.documentElement.style.setProperty('--console-height', `${imgHeight}px`)
+    }
+    getConsoleImageHeight()
+  
     // Store the initial content of text-container1
     var initialTextContainer1Content = document.querySelector('.text-container1').innerText;
 
@@ -87,6 +99,17 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (commandText === 'about') {
                 printCommand(document.querySelector('.text-container'), commandText);
                 printAdditionalText(document.querySelector('.text-container'), initialTextContainer1Content);
+            
+            } else if (commandText === 'changefile terminal.html') {
+                printCommand(document.querySelector('.text-container'), commandText); // Append command to text-container
+                // delay before switching to ashes.html (ms)
+                setTimeout(function() {
+                    window.location.href = '../terminal/terminal.html';
+                }, 5000); 
+
+                // display console loading text
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version T442310.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: terminal.html.\nClient reached file_load.";
+                printAdditionalText(document.querySelector('.text-container'), additionalText);
 
             // switch to ashes.html
             } else if (commandText === 'changefile ashes.html') {
@@ -97,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version D109439.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: ashes.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version D109439.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: ashes.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
             
             // switch to bee-movie.html
@@ -109,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version J83333.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: bee-movie.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version J83333.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: bee-movie.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
 
             // switch to breen.html
@@ -121,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version C312034.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: breen.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version C312034.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: breen.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
             
             // switch to died.html
@@ -133,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version E34667.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: died.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version E34667.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: died.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
             
             // switch to kenough.html
@@ -145,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version B12290.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: kenough.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version B12290.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: kenough.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
             
             // switch to npc.html
@@ -157,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version F829551.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: npc.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version F829551.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: npc.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
 
             // switch to pacer-test.html
@@ -169,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version P13337.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: pacer-test.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version P13337.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: pacer-test.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
             
             // switch to wheatley.html
@@ -181,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version W909451.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: wheatley.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version W909451.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: wheatley.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
 
             // switch to team-fortress.html
@@ -193,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 5000); 
 
                 // display console loading text
-                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version T0101010.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: team-fortress.html.\nClient reached file_load";
+                var additionalText = "Initializing RC libraries for secure Internet server.\nExecuting server config file.\nConnection to file coordinator established.\nCurrent schema is up-to-date with version T0101010.\nConnection to RC servers successful.\nPublic IP to RC is 130.132.173.194.\nFile: team-fortress.html.\nClient reached file_load.";
                 printAdditionalText(document.querySelector('.text-container'), additionalText);
 
             // print general text from user
