@@ -1,6 +1,5 @@
-# ART 369 Interactive Design and the Internet: Software for People 
-
-Projects + assignments:
+## ART 369 Interactive Design and the Internet: Software for People 
+---
 
 [Project-1: Webzine](https://github.com/ExzoZbta/interactive/tree/main/project-1/final)
 ------------------------
