@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
                "\n----kenough.html" +
                "\n----npc.html" +
                "\n----pacer-test.html" +
-               "\n----portal.html" +
+               "\n----wheatley.html" +
                "\n----team-fortress.html" +
                "\nhelp - Displays this list of commands and their descriptions." +
                "\nabout - Displays information about the page you are currently on." +

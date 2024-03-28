@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
                "\n----kenough.html" +
                "\n----npc.html" +
                "\n----pacer-test.html" +
-               "\n----portal.html" +
+               "\n----wheatley.html" +
                "\n----team-fortress.html" +
                "\nhelp - Displays this list of commands and their descriptions." +
                "\nabout - Displays information about the page you are currently on." +
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
                "\n----bridge" +
                "\n----chorus_2" +
                "\n----outro" +
-               "\n----playsound im_ken - Plays the audio (and full) version of 'I'm Just Ken' by Ryan Gosling (from Barbie The Album)";
+               "\nplaysound im_ken - Plays the audio (and full) version of 'I'm Just Ken' by Ryan Gosling (from Barbie The Album)";
 
                 printAdditionalText(document.querySelector('.text-container'), helpText);
             
