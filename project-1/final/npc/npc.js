@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
                "\n----team-fortress.html" +
                "\nhelp - Displays this list of commands and their descriptions." +
                "\nabout - Displays information about the page you are currently on." +
-               "\nstart - Begin your text-guided adventure.";
+               "\nstart 1 - Begin your text-guided adventure.";
 
                 printAdditionalText(document.querySelector('.text-container'), helpText);
             
