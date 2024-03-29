@@ -138,16 +138,16 @@
                 <div id="three-decisions">
                     <br>
                     - As you walk straight, you notice a man donning a full suit of armor standing beside the stone path. 
-                    As you get closer, you realize their armor belongs to the Stormcloak faction.
+                    As you get closer, you realize his armor belongs to the Stormcloak faction.
                     <br>
-                    DECISIONS: "npc_conversenpc 0"&nbsp;&nbsp;&nbsp;"mp_conversenpc 1"&nbsp;&nbsp;&nbsp;"use rc_weapon_longsword"
+                    DECISIONS: "mp_conversenpc 0"&nbsp;&nbsp;&nbsp;"mp_conversenpc 1"&nbsp;&nbsp;&nbsp;"use rc_weapon_longsword"
                     <br>
                     --------------------------
                 </div>
 
                 <div id="yes-converse">
                     <br>
-                    <!-- if npc_conversenpc 1 -->
+                    <!-- if mp_conversenpc 1 -->
                     - [Stormcloak Soldier]: "I used to be an adventurer like you. Then I took an arrow in the knee..."
                     <br>
                     DECISIONS: "restart"
@@ -157,7 +157,7 @@
 
                 <div id="no-converse">
                     <br>
-                    <!-- if npc_conversenpc 0 -->
+                    <!-- if mp_conversenpc 0 -->
                     - [Stormcloak Soldier]: "Talos be with you."
                     <br>
                     DECISIONS: "restart"
