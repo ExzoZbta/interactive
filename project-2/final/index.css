@@ -22,3 +22,30 @@ body {
     z-index: 1;
 
 }
+
+.tv-video {
+    object-fit: initial;
+    position: fixed;
+    width: 700px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    display: none;
+}
+
+#static-overlay {
+    position: fixed;
+    width: 750px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.1;
+    pointer-events: none; 
+    z-index: 1;
+
+
+}
+

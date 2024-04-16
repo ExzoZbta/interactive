@@ -1,31 +1,47 @@
 var isTVOn = false;
+var videoPlaybackTime = 0;
 
-// change tv image
+    // Function to toggle TV image, static image, and video
 function toggleTV() {
-
-    if (!isTVOn) {
+     if (!isTVOn) {
         document.getElementById('tv').src = "img/tv-transition.png";
         isTVOn = true;
 
-        // show static gif during transition with delay
+        // Show static gif during transition with delay
         document.getElementById('static').style.display = 'block';
-       
+           
         setTimeout(function() {
             document.getElementById('static').style.display = 'none';
+            // Show video after static ends
+            var videoElement = document.querySelector('.tv-video');
+            videoElement.style.display = 'block';
+            // Set video playback time
+            videoElement.currentTime = videoPlaybackTime;
+            // Start playing the video
+            videoElement.play();
+            // show static above video playing
+            document.getElementById('static-overlay').style.display = 'block';
         }, 500);
 
-        // play static gif audio
+        // Play static gif audio with lower volume
         var staticAudio = document.getElementById('static-audio');
-        staticAudio.volume = 0.1;
+        staticAudio.volume = 0.2; // Adjust volume level here
         staticAudio.play();
     } else {
         document.getElementById('tv').src = "img/tv-resize.png";
         isTVOn = false;
+        // Pause the video and store current playback time
+        var videoElement = document.querySelector('.tv-video');
+        videoPlaybackTime = videoElement.currentTime;
+        videoElement.pause();
+        // hide static above video playing
+        document.getElementById('static-overlay').style.display = 'none';
     }
-}  
+}
 
-// turn on/off the tv when spacebar is pressed
+// Event listener for keydown event
 document.addEventListener('keydown', function(event) {
+    // Check if the pressed key is spacebar
     if (event.key === " ") {
         toggleTV();
     }
