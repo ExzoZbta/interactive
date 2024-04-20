@@ -4,6 +4,7 @@ body {
 
 #tv {
     position: fixed;
+    display: block;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -47,5 +48,29 @@ body {
     z-index: 1;
 
 
+}
+
+.tv-container {
+    display: block;
+    height: var(--tv-height);
+    width: 72.5%;
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.button-container {
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+}
+#power-button {
+    width: 7%;
+    cursor: pointer;
 }
 
