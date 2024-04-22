@@ -4,31 +4,48 @@ body {
 
 #tv {
     position: fixed;
+    width: 60%;
+    max-width: 100%;
     display: block;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 2;
+    z-index: 9998;
 
 }
 
 #static {
     position: fixed;
-    width: 750px;
+    width: 60%;
     height: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 1;
+    z-index: 5;
 
 }
 
-.tv-video {
-    object-fit: initial;
+.video-container {
+    display: block;
+    height: var(--tv-height);
+    width: 60%;
+    max-width: 100%;
+    max-height: 100%;
     position: fixed;
-    width: 700px;
-    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: 1px solid pink;
+    overflow: none;
+}
+
+.tv-video {
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    height: 80%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -38,39 +55,56 @@ body {
 
 #static-overlay {
     position: fixed;
-    width: 750px;
+    width: 60%;
     height: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     opacity: 0.1;
     pointer-events: none; 
-    z-index: 1;
-
-
+    z-index: 4;
 }
 
 .tv-container {
     display: block;
     height: var(--tv-height);
-    width: 72.5%;
+    width: 60%;
     max-width: 100%;
     max-height: 100%;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 3;
+    z-index: 9999;
+    border: 1px solid blue;
 }
 
 .button-container {
     width: 100%;
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
     display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
 }
 #power-button {
     width: 7%;
     cursor: pointer;
+    padding-right: 5%;
 }
+#channel-knob {
+    width: 7%;
+    cursor: pointer;
+    /* padding-right: 15%; */
+    transform: translateX(-90%);
+}
+
+/* #channel-button {
+    width: 25%;
+    cursor: pointer;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%);
+
+} */
 
