@@ -1,6 +1,6 @@
 var isTVOn = false;
 var videoPlaybackTime = 0;
-var videos = ["spongebob-elders.mp4"];
+var videos = ["spongebob-elders.mp4", "oldman-dancing.mp4"];
 var currentVideoSrc = "";
 
 // Function to toggle TV image, static image, and video
@@ -84,15 +84,6 @@ function staticTransition() {
 
 // ---POWER--- //
 
-// testing: check if spacebar is pressed, toggles TV on/off
-document.addEventListener('keyup', function(event) {
-    console.log("key up");
-    if (event.key === " ") {
-        toggleTV();
-        togglePowerButton();
-    }
-});
-
 // when user clicks on power button, switch the img correspondingly
 function togglePowerButton() {
     var powerButton = document.getElementById('power-button');
@@ -117,6 +108,15 @@ document.getElementById('power-button').addEventListener('click', function() {
     toggleTV();
     togglePowerButton();
 });
+// testing: check if spacebar is pressed, toggles TV on/off
+document.addEventListener('keyup', function(event) {
+    console.log("spacebar up");
+    if (event.key === " ") {
+        toggleTV();
+        togglePowerButton();
+    }
+});
+
 
 // ---DIAL--- ///
 
@@ -134,9 +134,30 @@ document.getElementById('channel-knob').addEventListener('click', function() {
     if (isTVOn) {
         staticTransition();
         pauseVideo();
-        playVideo();// Switch the channel
+        playVideo();
     }
 });
+// testing: check if left or right arrow key is pressed, same function as dial
+// document.addEventListener('keyup', function(event) {
+//     if (event.key === "ArrowLeft") {
+//         rotateDialLeft();
+//         console.log("dial move left");
+//         if (isTVOn) {
+//             staticTransition();
+//             pauseVideo();
+//             playVideo();
+//         }
+//     }
+//     else if (event.key === "ArrowRight") {
+//         rotateDialRight();
+//         console.log("dial move right");
+//         if (isTVOn) {
+//             staticTransition();
+//             pauseVideo();
+//             playVideo();
+//         }
+//     }
+// });
 
 
 
