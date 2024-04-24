@@ -88,7 +88,8 @@ body {
     /* border: 1px solid red; */
 }
 #power-button {
-    width: 7%;
+    width: 11%;
+    align-self: center;
     cursor: pointer;
     padding-right: 5%;
 }
