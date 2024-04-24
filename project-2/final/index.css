@@ -108,3 +108,33 @@ body {
 
 } */
 
+
+
+@media only screen and (orientation: landscape) {
+
+    #tv {
+        width: 50%;
+    }
+
+    #static-overlay {
+        width: 50%;
+    }
+
+    #static {
+        width: 50%;
+    }
+
+    .video-container {
+        width: 50%;
+    }
+
+    .tv-container {
+        width: 50%;
+    }
+
+    /* .button-container {
+        bottom: 10.5%;
+    } */
+    
+  }
+
