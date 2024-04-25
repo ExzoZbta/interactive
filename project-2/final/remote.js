@@ -1,6 +1,12 @@
 var isTVOn = false;
 var videoPlaybackTime = 0;
-var videos = ["spongebob-elders.mp4", "oldman-dancing.mp4"];
+var videos = ["spongebob-elders.mp4", "oldman-dancing.mp4", "clean-laptop.mp4", 
+"green-ramp.mp4", "gartic.mp4", "lebron.mp4", "wolf-simp.mp4", 
+"simpsons-talking.mp4", "pizza-aggressive.mp4", "jynxzi-cav.mp4",
+"average-yasuo.mp4", "why-civil.mp4", "glasses.mp4", "deep-voice.mp4", "be-man.mp4",
+"better-gamer.mp4", "dominican.mp4", "beluga.mp4", "brazil-dog.mp4", "shyboy.mp4",
+"theboys.mp4", "theboys.mp4", "jorge-face.mp4", "jorge-face2.mp4", "jorge-sleep.mp4",
+"glaze.mp4"];
 var currentVideoSrc = "";
 
 // Function to toggle TV image, static image, and video
@@ -28,30 +34,45 @@ function toggleTV() {
 
 // ---VIDEO--- ///
 
-// display a randomly selected video with a faint static overlay 
+// used when tv is powered on/off
 function playVideo() {
+    console.log("playVideo() called");
+    try {
+        var videoElement = document.querySelector('.tv-video');
+        videoElement.style.display = 'block';
 
-    // Show video after static ends
-    var videoElement = document.querySelector('.tv-video');
-    videoElement.style.display = 'block';
+        console.log("Current video source:", videoElement.src); 
 
-    // Resume playback from previous position if the same video is still selected
-    if (videoElement.src === currentVideoSrc) {
-        videoElement.currentTime = videoPlaybackTime;
-    } else {
-        // randomly select a video
-        var randomIndex = Math.floor(Math.random() * videos.length);
-        var randomVideo = videos[randomIndex];
-        videoElement.src = "gif-vids/" + randomVideo;
-        currentVideoSrc = videoElement.src; // Update current video source
-        videoElement.currentTime = 0; // Reset playback time for new video
+        // Resume playback from previous position when tv powers back on
+        if (videoElement.src === "") {
+            // randomly select a video
+            var randomIndex = Math.floor(Math.random() * videos.length);
+            var randomVideo = videos[randomIndex];
+            console.log("Selected video:", randomVideo);
+            videoElement.src = "gif-vids/" + randomVideo;
+            currentVideoSrc = videoElement.src; // Update current video source
+            videoElement.load();
+            videoElement.currentTime = 0;
+        } else {
+            currentVideoSrc = videoElement.src; // Update current video source
+            videoElement.currentTime = videoPlaybackTime;
+        }
+
+        // when the video naturally ends
+        videoElement.addEventListener('ended', function() {
+            staticTransition();
+            playRandomVideo();
+        });
+
+        videoElement.volume = 0.1;
+        videoElement.play();
+        document.getElementById('static-overlay').style.display = 'block';
+    } catch (error) {
+        console.error("Error in playVideo():", error);
     }
-    videoElement.play();
-
-    // constantly show other static gif above video playing
-    document.getElementById('static-overlay').style.display = 'block';
-
 }
+
+
 
 // pauses the video and saves where the user stopped
 function pauseVideo() {
@@ -72,7 +93,7 @@ function staticTransition() {
     document.getElementById('static').style.display = 'block';
 
     var staticAudio = document.getElementById('static-audio');
-    staticAudio.volume = 0.05;
+    staticAudio.volume = 0.02;
     staticAudio.play();
 
     setTimeout(function() {
@@ -99,7 +120,7 @@ function togglePowerButton() {
 // plays audio for power button
 function playButtonPressSound() {
     var buttonPressSound = document.getElementById('power-button-sound');
-    buttonPressSound.volume = 1;
+    buttonPressSound.volume = 0.2;
     buttonPressSound.play();
 }
 
@@ -110,8 +131,8 @@ document.getElementById('power-button').addEventListener('click', function() {
 });
 // testing: check if spacebar is pressed, toggles TV on/off
 document.addEventListener('keyup', function(event) {
-    console.log("spacebar up");
     if (event.key === " ") {
+        console.log("spacebar up");
         toggleTV();
         togglePowerButton();
     }
@@ -127,38 +148,64 @@ function rotateDial() {
     var angle = (currentRotation.match(/rotate\(([-\d]+)deg\)/) || [])[1] || 0;
     var newAngle = parseInt(angle) + 10; // Adjust rotation here
     dialImage.style.transform = "translateX(-90%) translateY(-0%) rotate(" + newAngle + "deg)";
-}
-document.getElementById('channel-knob').addEventListener('click', function() {
-    rotateDial();
+
     console.log("dial move");
+    playDialTurnSound();
     if (isTVOn) {
         staticTransition();
         pauseVideo();
-        playVideo();
+        playRandomVideo();
+    }
+}
+document.getElementById('channel-knob').addEventListener('click', rotateDial);
+
+// plays audio for dial turning
+function playDialTurnSound() {
+    var dialTurnSound = document.getElementById('dial-turn-sound');
+    dialTurnSound.volume = 0.2;
+    dialTurnSound.play();
+}
+
+// Variable to store the index of the last played video
+var lastVideoIndex = -1;
+
+// plays a random video in the list, used for the dial function
+function playRandomVideo() {
+    console.log("playRandomVideo() called");
+    try {
+        var videoElement = document.querySelector('.tv-video');
+        videoElement.style.display = 'block';
+
+        console.log("Current video source:", videoElement.src); 
+
+        // randomly select a video
+        var randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * videos.length);
+        } while (randomIndex === lastVideoIndex); // Repeat until a different index is selected
+        
+        var randomVideo = videos[randomIndex];
+        console.log("Selected video:", randomVideo);
+        videoElement.src = "gif-vids/" + randomVideo;
+        currentVideoSrc = videoElement.src; // Update current video source
+        videoElement.load();
+        videoElement.currentTime = 0;
+
+        videoElement.play();
+        document.getElementById('static-overlay').style.display = 'block';
+
+        // Update the last video index
+        lastVideoIndex = randomIndex;
+    } catch (error) {
+        console.error("Error in playRandomVideo():", error);
+    }
+}
+// testing: check if left or right arrow key is pressed, same function as dial
+document.addEventListener('keyup', function(event) {
+    if (event.key === "ArrowLeft" || event.key ==="ArrowRight") {
+        rotateDial();
     }
 });
-// testing: check if left or right arrow key is pressed, same function as dial
-// document.addEventListener('keyup', function(event) {
-//     if (event.key === "ArrowLeft") {
-//         rotateDialLeft();
-//         console.log("dial move left");
-//         if (isTVOn) {
-//             staticTransition();
-//             pauseVideo();
-//             playVideo();
-//         }
-//     }
-//     else if (event.key === "ArrowRight") {
-//         rotateDialRight();
-//         console.log("dial move right");
-//         if (isTVOn) {
-//             staticTransition();
-//             pauseVideo();
-//             playVideo();
-//         }
-//     }
-// });
-
 
 
 // ---RESPONSIVE--- ///

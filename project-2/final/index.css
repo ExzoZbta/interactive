@@ -2,6 +2,7 @@ body {
     background-color: black;
     width: 100vw;
     height: 100vh;
+    overflow: hidden; 
 }
 
 #tv {
@@ -39,15 +40,15 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     overflow: none;
 }
 
 .tv-video {
-    object-fit: cover;
+    object-fit: fill;
     position: fixed;
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 75%;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -78,7 +79,7 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 9999;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .button-container {
