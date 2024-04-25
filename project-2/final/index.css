@@ -144,3 +144,26 @@ video::-webkit-media-controls-start-playback-button {
     
   }
 
+  @media only screen and (max-width: 600px) {
+
+    #tv {
+        width: 90%;
+    }
+
+    #static-overlay {
+        width: 90%;
+    }
+
+    #static {
+        width: 90%;
+    }
+
+    .video-container {
+        width: 90%;
+    }
+
+    .tv-container {
+        width: 90%;
+    }
+  }
+
