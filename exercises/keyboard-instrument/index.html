@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html> 
   <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Keyboard Instrument</title>
     <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
-    <div>Press a key!</div>
-    <div id="key_display"></div>
 
-    <!-- Scripts go at the bottom of your <body> element, below your HTML.-->
+
+    <div class="page-container">
+
+      <div class="tv-wrapper">
+
+        <img id="static-overlay" src="gif-vids/static.gif">
+
+        <img id="tv" src="img/tv.png">
+        <img id="static" src="gif-vids/static.gif">
+
+        <!-- videos -->
+        <div class="video-container">
+          <video class="tv-video" webkit-playsinline playsinline>
+
+            <source id="spongebob-elders" src="gif-vids/spongebob-elders.mp4" type="video/mp4">
+  
+
+          </video>
+        </div>
+      
+      </div>
+
+    </div>
+
     <script src="main.js"></script>
+    <audio id="static-audio" src="audio/tv-static-01.mp3"></audio>
+
   </body>
 </html>

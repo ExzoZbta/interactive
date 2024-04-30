@@ -1,3 +1,134 @@
-.xl-type {
-  font-size: 100px;
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; 
 }
+
+#tv {
+  position: fixed;
+  width: 60%;
+  max-width: 100%;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9998;
+
+}
+
+#static {
+  position: fixed;
+  width: 60%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index: 5;
+
+}
+
+.video-container {
+  display: block;
+  height: var(--tv-height);
+  width: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  /* border: 1px solid pink; */
+  overflow: none;
+}
+.tv-video {
+  object-fit: fill;
+  position: fixed;
+  width: 80%;
+  height: 75%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 0;
+  display: none;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+#static-overlay {
+  position: fixed;
+  width: 60%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.1;
+  pointer-events: none; 
+  z-index: 4;
+}
+
+.tv-container {
+  display: block;
+  height: var(--tv-height);
+  width: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  /* border: 1px solid blue; */
+}
+
+
+@media only screen and (orientation: landscape) {
+
+  #tv {
+      width: 50%;
+  }
+
+  #static-overlay {
+      width: 50%;
+  }
+
+  #static {
+      width: 50%;
+  }
+
+  .video-container {
+      width: 50%;
+  }
+
+  .tv-container {
+      width: 50%;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  #tv {
+      width: 90%;
+  }
+
+  #static-overlay {
+      width: 90%;
+  }
+
+  #static {
+      width: 90%;
+  }
+
+  .video-container {
+      width: 90%;
+  }
+
+  .tv-container {
+      width: 90%;
+  }
+}
+
