@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Name Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Pirate Name Generator</h2>
+
+        <form id="pirateForm">
+            <label for="adjective">Select an adjective:</label>
+            <select id="adjective" name="adjective">
+                <option value="Salty">Salty</option>
+                <option value="Swashbuckling">Swashbuckling</option>
+                <option value="Dread">Dread</option>
+                <option value="Buccaneer">Buccaneer</option>
+                <option value="Plundering">Plundering</option>
+                <option value="Dreadful">Dreadful</option>
+                <option value="Warfaring">Warfaring</option>
+                <option value="Plagued">Plagued</option>
+                <option value="Hateful">Hateful</option>
+                <option value="Fiery">Fiery</option>
+                <option value="Vengeful">Vengeful</option>
+                <option value="Spooky">Spooky</option>
+
+
+            </select>
+
+            <label for="name">Enter your name:</label>
+
+            <input type="text" id="name" name="name" required>
+
+            <button type="submit">Generate Pirate Name</button>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <script src="form.js"></script>
+
+
+</body>
+</html>
