@@ -20,5 +20,5 @@
   ### **Basic Overview**:
    - This interactive tool takes on the form of a vintage TV, simulating the experience of watching old movies or TV shows with the taps of a finger or the presses of keyboard keys.
 
-  ### **Homepage** 
+  ### **Homepage** ([`index.html`](https://exzozbta.github.io/interactive/project-2/final/index.html)):
   ![Img of homepage](https://i.imgur.com/0yw6khT.png)
