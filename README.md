@@ -12,7 +12,7 @@
   ### **Homepage** ([`terminal.html`](https://github.com/ExzoZbta/interactive/tree/main/project-1/final/terminal)):
   ![Img of homepage](https://i.imgur.com/2ckqZzL.png)
 
-## [Project-2: Tool for One](https://github.com/ExzoZbta/interactive/tree/main/project-2/final) - in progress
+## [Project-2: Tool for One](https://github.com/ExzoZbta/interactive/tree/main/project-2/final)
 ---
   ### **Prompt**:
    - Make a website that is a tool designed for one specific, named person. The important thing is that you identify the needs of this user specifically.
@@ -20,4 +20,5 @@
   ### **Basic Overview**:
    - This interactive tool takes on the form of a vintage TV, simulating the experience of watching old movies or TV shows with the taps of a finger or the presses of keyboard keys.
 
-  ### **Homepage** 
+  ### **Homepage** ([`index.html`](https://exzozbta.github.io/interactive/project-2/final/index.html)):
+  ![Img of homepage](https://i.imgur.com/0yw6khT.png)
