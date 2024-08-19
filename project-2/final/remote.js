@@ -146,8 +146,8 @@ function rotateDial() {
     var dialImage = document.getElementById('channel-knob');
     var currentRotation = dialImage.style.transform;
     var angle = (currentRotation.match(/rotate\(([-\d]+)deg\)/) || [])[1] || 0;
-    var newAngle = parseInt(angle) + 10; // Adjust rotation here
-    dialImage.style.transform = "translateX(-90%) translateY(-0%) rotate(" + newAngle + "deg)";
+    var newAngle = parseInt(angle) + 10;
+    dialImage.style.transform = "translateX(-90%) rotate(" + newAngle + "deg)";
 
     console.log("dial move");
     playDialTurnSound();
