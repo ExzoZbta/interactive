@@ -219,8 +219,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const getTVImageHeight = () => {
         const img = document.getElementById("tv");
-        const imgHeight = img.clientHeight;
-        document.documentElement.style.setProperty('--tv-height', `${imgHeight}px`)
+        if (img.complete) {
+            const imgHeight = img.clientHeight;
+            document.documentElement.style.setProperty('--tv-height', `${imgHeight}px`)
+        } else {
+            img.addEventListener('load', () => {
+                const imgHeight = img.clientHeight;
+                document.documentElement.style.setProperty('--tv-height', `${imgHeight}px`)
+            });
+        }
     }
     getTVImageHeight()
 });
