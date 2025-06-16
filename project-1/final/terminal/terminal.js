@@ -6,8 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const getConsoleImageHeight = () => {
         const img = document.getElementById("console");
-        const imgHeight = img.clientHeight;
-        document.documentElement.style.setProperty('--console-height', `${imgHeight}px`)
+        if (img.complete) {
+            const imgHeight = img.clientHeight;
+            document.documentElement.style.setProperty('--console-height', `${imgHeight}px`)
+        } else {
+            img.addEventListener('load', () => {
+                const imgHeight = img.clientHeight;
+                document.documentElement.style.setProperty('--console-height', `${imgHeight}px`)
+            });
+        }
     }
     getConsoleImageHeight()
   
